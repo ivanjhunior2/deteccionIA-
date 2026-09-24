@@ -2,4 +2,4 @@ __pycache__/
 *.py[cod]
 venv/
 env/
-.pytest_cache/models/model_selected.keras
+
