@@ -3,7 +3,6 @@ from pathlib import Path
 import numpy as np
 import tensorflow as tf
 from PIL import Image
-from tensorflow.keras.applications.resnet50 import preprocess_input
 
 
 IMAGE_SIZE = (256, 256)
@@ -54,8 +53,7 @@ def prepare_image(image: Image.Image):
     array = np.expand_dims(array, axis=0)
 
     # Preprocesamiento propio de ResNet50
-    array = preprocess_input(array)
-
+    
     return array
 
 
