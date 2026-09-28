@@ -28,13 +28,6 @@ def load_model():
 
 
 def prepare_image(image: Image.Image):
-    """
-    Aplica el mismo esquema de entrada empleado durante el modelado:
-    - RGB
-    - 256 x 256
-    - float32
-    - preprocess_input de ResNet50
-    """
 
     image = image.convert("RGB")
 
